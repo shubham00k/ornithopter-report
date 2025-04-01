@@ -1,0 +1,31 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage{preamble} % Contains all packages and custom commands
+
+\begin{document}
+
+% Front matter
+\include{frontmatter/titlepage}
+\include{frontmatter/certificate}
+\include{frontmatter/approval}
+\include{frontmatter/declaration}
+\include{frontmatter/abstract}
+
+\tableofcontents
+\clearpage
+
+% Main chapters
+\include{chapters/01_introduction}
+\include{chapters/02_literature_review}
+\include{chapters/03_goals_objectives}
+\include{chapters/04_progress_overview}
+\include{chapters/05_design_development}
+\include{chapters/06_implementation}
+\include{chapters/07_testing_results}
+\include{chapters/08_next_steps}
+\include{chapters/09_conclusion}
+
+% Back matter
+\include{backmatter/acknowledgments}
+\include{backmatter/bibliography}
+
+\end{document}

@@ -1,0 +1,72 @@
+% Basic document setup
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+
+% Font and text formatting
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{setspace}
+\onehalfspacing
+
+% Mathematics and symbols
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{siunitx}
+
+% Graphics and figures
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{subcaption}
+\usepackage{wrapfig}
+\graphicspath{{figures/}}
+
+% Tables
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{longtable}
+
+% Colors
+\usepackage{xcolor}
+\definecolor{titleblue}{RGB}{0,51,102}
+
+% Headers and footers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\leftmark}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+% Chapter formatting
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+  {\normalfont\huge\bfseries\color{titleblue}}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
+\titlespacing*{\chapter}{0pt}{-30pt}{20pt}
+
+% Section formatting
+\titleformat{\section}
+  {\normalfont\Large\bfseries\color{titleblue}}{\thesection}{1em}{}
+\titleformat{\subsection}
+  {\normalfont\large\bfseries\color{titleblue}}{\thesubsection}{1em}{}
+
+% Table of contents
+\usepackage[titles]{tocloft}
+\renewcommand{\cftchapfont}{\normalfont\bfseries\color{titleblue}}
+\renewcommand{\cftsecfont}{\normalfont}
+\renewcommand{\cftsubsecfont}{\normalfont}
+
+% References and citations
+\usepackage[backend=biber,style=ieee]{biblatex}
+\addbibresource{backmatter/bibliography.bib}
+
+% Custom commands
+\newcommand{\ornithopter}{\textit{Ornithopter}}
+\newcommand{\bldc}{\textit{BLDC}}
+\newcommand{\lipo}{\textit{LiPo}}
+\newcommand{\esc}{\textit{ESC}}
+
+% Hyperlinks (should be last package loaded)
+\usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue,citecolor=blue]{hyperref}

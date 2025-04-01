@@ -1,0 +1,67 @@
+\chapter{Progress Overview}
+
+This section provides a summary of the work completed so far and highlights the milestones achieved during the development of the ornithopter project.
+
+\section{Summary of Work Completed}
+The project has progressed through various stages of design, development, and implementation, resulting in a functional prototype ornithopter. Key aspects of the project completed to date include:
+
+\begin{itemize}
+    \item \textbf{Design and Assembly of Prototype}: A functional prototype of the ornithopter has been built. The primary components used in the prototype include:
+    \begin{itemize}
+        \item \textbf{\bldc Motor}: Provides the primary thrust for the ornithopter's flight.
+        \item \textbf{\lipo Battery}: Powers the motor and other electronic systems.
+        \item \textbf{\esc (Electronic Speed Controller)}: Regulates the speed of the motor based on input signals.
+        \item \textbf{Delrin Gears}: Utilized for efficient motion transmission and control of wing flapping.
+        \item \textbf{Servo Motors}: Control the wing movement and directional stability of the ornithopter.
+        \item \textbf{Nylon Cloth Wings}: Lightweight and flexible material used to create the wings of the ornithopter.
+    \end{itemize}
+    
+    \item \textbf{Mechanical Integration and Mathematical Model}
+\end{itemize}
+
+\section{Flapping Frequency and RPM Calculations}
+In the ornithopter project, the \textbf{number of flaps per second} and the \textbf{RPM (rotations per minute)} of the motor are critical parameters that influence the generation of lift and thrust. The following are the mathematical formulas to calculate the required flapping frequency and motor RPM.
+
+\subsection{Flapping Frequency}
+The flapping frequency $f$ (in flaps per second, Hz) is calculated based on the motor's RPM and the gearbox reduction ratio $r$. The relationship is given by:
+
+\[ f = \frac{RPM}{60 \times r} \]
+
+Where:
+\begin{itemize}
+    \item $f$ is the flapping frequency in Hz (flaps per second),
+    \item $RPM$ is the motor's rotational speed in rotations per minute,
+    \item $r$ is the gearbox reduction ratio.
+\end{itemize}
+
+\subsection{Required RPM for Flapping}
+To calculate the required RPM for a given flapping frequency $f$, the formula is rearranged as follows:
+
+\[ RPM = 60 \times f \times r \]
+
+\subsection{Wing Flap Angle ($\theta$)}
+The wing flap angle $\theta$ is a crucial parameter for lift generation during the downstroke. This angle is typically determined through experimental testing but is an important aspect of flight performance.
+
+\subsection{Example}
+Assume the required flapping frequency is 5 flaps per second, and the gearbox reduction ratio $r$ is 5:1. The required motor speed $RPM$ is calculated as:
+
+\[ RPM = 60 \times 5 \times 5 = 1500\,RPM \]
+
+Thus, the motor must operate at 1500 RPM to achieve a flapping frequency of 5 flaps per second.
+
+\begin{itemize}
+    \item \textbf{Power System}: A \lipo battery has been connected to the \esc to supply sufficient power to the motor and other components.
+\end{itemize}
+
+\section{Milestones Achieved}
+Several important milestones have been achieved in the course of this project:
+
+\begin{enumerate}
+    \item \textbf{Completion of Initial Prototype}: A fully assembled prototype ornithopter has been constructed, incorporating all the mechanical and electronic components.
+    
+    \item \textbf{Integration of Power System}: The \lipo battery and \esc have been successfully integrated to provide power management for the motor and servo motors.
+    
+    \item \textbf{Wing Mechanism Operational}: The wing mechanism, driven by Delrin gears and controlled by servo motors, functions as intended, enabling simulated flapping motion.
+\end{enumerate}
+
+The project has reached a significant stage with a functional prototype ready for testing and further refinement.

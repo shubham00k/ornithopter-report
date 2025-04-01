@@ -1,0 +1,62 @@
+\chapter{Implementation Status}
+
+\section{Current Status of Implementation}
+\begin{itemize}
+    \item \textbf{Power System}: The \lipo battery, \bldc motor, and \esc have been successfully integrated, providing consistent power delivery to the motor.
+    
+    \item \textbf{Wing Mechanism}: Delrin gears have been assembled to drive the wing flapping motion, which is yet to test.
+    
+    \item \textbf{Structural Components}: The nylon cloth wings are securely attached and designed for lightweight, aerodynamic flight.
+    
+    \item \textbf{Control Systems}: Servo motors are in place in tail part for precise control over wing angles and flapping frequency.
+\end{itemize}
+
+\section{Methodology Applied}
+This section details the methodology applied in developing the ornithopter, as shown in the flowchart below. The system is divided into several subsystems that work together to enable the ornithopter's wing-flapping motion.
+
+\subsection{Power Source}
+The power source of the ornithopter consists of a Lithium Polymer (\lipo) battery. The battery supplies the necessary electrical energy to power the entire system.
+
+\subsection{Control System}
+The control system is responsible for managing the flow of power from the battery to the \bldc motor. It includes the Electronic Speed Controller (\esc), which adjusts the motor speed, ensuring that the wings flap at the correct rate. The control system also manages the servo motors that provide fine control over the wing movement.
+
+\subsection{\bldc Motor}
+The Brushless DC (\bldc) motor serves as the primary driver of the ornithopter's mechanical system. It converts electrical energy from the \lipo battery into mechanical energy, generating rotational motion that is transmitted to the gear mechanism. This motor is regulated by the \esc to ensure smooth and efficient performance.
+
+\subsection{Gear Mechanism}
+The gear mechanism connects the \bldc motor to the wings. The rotational motion from the motor is transmitted to the flapping wings through a series of Delrin gears, which convert rotational motion into a flapping motion. The gear ratio is designed to optimize the motor's power output for wing movement, ensuring efficient energy use.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{methodology_flowchart}
+    \caption{Methodology Flowchart for Ornithopter}
+    \label{fig:methodology_flowchart}
+\end{figure}
+
+\subsection{Flapping Wings}
+The wings, made from lightweight nylon cloth, are connected to the gear mechanism. The servo motors allow for fine-tuned control of wing flapping, ensuring stability during flight. The wings' motion is controlled to create lift and enable the ornithopter to mimic the flight of birds.
+
+This methodology ensures the integration of electrical, mechanical, and aerodynamic components to achieve a functional ornithopter capable of sustained flapping flight.
+
+\section{Challenges Encountered and Solutions Implemented}
+Throughout the implementation process, several challenges were encountered and successfully addressed:
+
+\begin{itemize}
+    \item \textbf{Challenge 1: Power Consumption of \bldc Motor}
+    \begin{itemize}
+        \item \textbf{Problem}: The initial configuration led to high power consumption, causing rapid depletion of the \lipo battery.
+        \item \textbf{Solution}: A more efficient \esc was selected to optimize power delivery, reducing energy wastage.
+    \end{itemize}
+    
+    \item \textbf{Challenge 2: Gear Alignment and Efficiency}
+    \begin{itemize}
+        \item \textbf{Problem}: Misalignment of Delrin gears resulted in uneven wing flapping and power loss.
+        \item \textbf{Solution}: Gear positioning was adjusted and realigned, ensuring smooth transmission of power from the motor to the wings.
+    \end{itemize}
+    
+    \item \textbf{Challenge 3: Wing Stability During Flapping}
+    \begin{itemize}
+        \item \textbf{Problem}: Early prototypes experienced instability in the wings, particularly at higher flapping frequencies.
+        \item \textbf{Solution}: The attachment mechanism of the nylon wings was reinforced, and the flapping frequency was adjusted for smoother operation.
+    \end{itemize}
+\end{itemize}
